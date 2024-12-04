@@ -1,0 +1,106 @@
+-- Database Creation     -- refer insert(1).png
+show dbs
+use CarsCompany
+
+
+-- Create Collection        -- refer insert(1).png
+db.createCollection("Cars")
+
+-- InsertOne data in cars    -- refer insert(1).png
+db.Cars.insertOne({
+    "carName": "Altroz",
+    "carBrand": "Tata",
+    "launchYear": 2023,
+    "price": 18000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "Sedan"
+  })
+
+
+-- InsertMany data in cars    -- refer insert(1).png&insert(2).png
+db.cars.insertMany([])  -- data in CarsData.txt
+
+
+-- Create Collection Sales and InsertMany data    -- refer insert(2).png&insert(3).png
+db.Sales.insertMany([])   - data in SalesData.txt
+
+
+-- FindOne data from cars     --   refer find(1).png
+db.Cars.findOne({"_id":ObjectId('67505acab584da1d5d428c74')})
+
+-- Find data from sales   -- refer find(1).png
+db.Sales.find().toArray()
+
+
+-- UpdateOne Using $set     Altroz price to 25000   -- refer update(1).png
+db.Cars.updateOne({"_id":ObjectId('67505a9db584da1d5d428c6d')},{$set:{"price":25000}})
+
+-- UpdateMany Using $set      Tata brand car bags to 6   -- refer update(1).png
+db.Cars.updateMany({"carBrand":"Tata"},{$set:{"airbags":6}})
+
+-- UpdateMany Using $inc       Tata brand car airbags incremented by 1     -- refer update(1).png
+db.Cars.updateMany({"carBrand":"Tata"},{$inc:{"airbags":2}})
+
+
+-- DeleteOne    delete  Model S car      -- refer delete.png
+db.Cars.deleteOne({"carName":"Model S"})
+
+-- DeleteMany    delete Ford Brand cars      -- refer delete.png
+db.Cars.deleteMany({"carBrand":"Ford"})
+
+
+************************************************************
+
+
+-- CountDocuments        Counting Documents in both collections  -- refer delete.png
+db.Cars.countDocuments()
+db.Sales.countDocuments()
+
+-- $and and $eq     Toyota cars launched in 2022     -- refer aggregate(1).png
+db.Cars.find({$and:[{"carBrand":"Toyota},{"launchYear":{$eq:2022}}]})
+
+-- $or and $gte,$lte   Finding cars priced between 25000 and 50000   -- refer aggregate(1).png
+db.Cars.find({$or:[{"price":{$gte:25000}},{"price":{$lte:55000}}]})
+
+
+-- pretty and toArray     Find all documents in cars collection      -- refer pretty.png
+db.Cars.find({},{_id:0}).pretty().toArray()
+
+-- $not and $eq  Cars not launched in 2022    -- refer aggregate(2).png
+db.Cars.find({"launchYear":{$not:{$eq:2022}}},{_id:0})
+
+-- $ne       Cars airbags not equal to 6   -- refer aggregate(3).png
+db.Cars.find({"airbags":{$ne:6}})
+
+***************************************************************************
+
+
+-- $match      -- refer match.png
+-- Cars price greater than 30000 and less than 55000 or 6 airbags
+db.Cars.aggregate([{$match:{$and:[{"price":{$gte:30000}},{$or:[{"price":{$lte:55000}},{"airbags":{$eq:6}}]}]}}])
+
+
+-- $group      -- refer group.png
+-- Getting total units sold for each car 
+db.Sales.aggregate([{$group:{_id:"$Car_Id",Sold_Units:{$sum:"$Units_Sold"}}}])
+
+-- $sort        -- refer sort.png
+-- Sorting from high sold to low sold cars
+db.Sales.aggregate([{$group:{_id:"$Car_Id",Sold_Units:{$sum:"$Units_Sold"}}},{$sort:{Sold_Units:-1}}])
+
+-- $limit   -- refer limit.png
+-- Getting 4 high sold carsdb.Sales.aggregate([{$group:{_id:"$Car_Id",Sold_Units:{$sum:"$Units_Sold"}}},{$sort:{Sold_Units:-1}},{$skip:15},{$limit:4}])
+db.Sales.aggregate([{$group:{_id:"$Car_Id",Sold_Units:{$sum:"$Units_Sold"}}},{$sort:{Sold_Units:-1}},{$skip:15},{$limit:4}])
+
+
+-- $lookup       --  refer lookup.png
+-- Merging two collections Cars and sales
+db.Sales.aggregate([{$lookup:{from:"Cars",localField:"Car_Id",foreignField:"_id",as:"CarData"}}])
+
+
+-- $project      -- refer project.png
+-- Showing only necessary data
+db.Sales.aggregate([{$lookup:{from:"Cars",localField:"Car_Id",foreignField:"_id",as:"CarData"}},{$unwind:"$CarData"},{$project:{_id:0,CarName:"$CarData.carName",Brand:"$CarData.carBrand",Rate:"$CarData.price",Profit:1}}]).pretty().toArray()
+
+

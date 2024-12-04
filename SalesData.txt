@@ -1,0 +1,164 @@
+[
+  {
+    "Units_Manufactured": 5000,
+    "Units_Sold": 4800,
+    "Profit": 2000000,
+    "Car_Id": ObjectId('67505a9db584da1d5d428c6d')
+  },
+  {
+    "Units_Manufactured": 7000,
+    "Units_Sold": 6800,
+    "Profit": 1500000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c6e')
+  },
+  {
+    "Units_Manufactured": 6000,
+    "Units_Sold": 5900,
+    "Profit": 1300000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c6f')
+  },
+  {
+    "Units_Manufactured": 8000,
+    "Units_Sold": 7900,
+    "Profit": 1200000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c70')
+  },
+  {
+    "Units_Manufactured": 4000,
+    "Units_Sold": 3800,
+    "Profit": 1800000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c71')
+  },
+  {
+    "Units_Manufactured": 3500,
+    "Units_Sold": 3400,
+    "Profit": 1600000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c72')
+  },
+  {
+    "Units_Manufactured": 9000,
+    "Units_Sold": 8800,
+    "Profit": 1100000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c73')
+  },
+  {
+    "Units_Manufactured": 8500,
+    "Units_Sold": 8300,
+    "Profit": 1400000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c74')
+  },
+  {
+    "Units_Manufactured": 3500,
+    "Units_Sold": 3400,
+    "Profit": 2200000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c75')
+  },
+  {
+    "Units_Manufactured": 3000,
+    "Units_Sold": 2900,
+    "Profit": 2500000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c76')
+  },
+  {
+    "Units_Manufactured": 4000,
+    "Units_Sold": 3900,
+    "Profit": 1700000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c77')
+  },
+  {
+    "Units_Manufactured": 6500,
+    "Units_Sold": 6400,
+    "Profit": 1900000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c78')
+  },
+  {
+    "Units_Manufactured": 5500,
+    "Units_Sold": 5400,
+    "Profit": 2100000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c79')
+  },
+  {
+    "Units_Manufactured": 4500,
+    "Units_Sold": 4400,
+    "Profit": 2300000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7a')
+  },
+  {
+    "Units_Manufactured": 2000,
+    "Units_Sold": 1900,
+    "Profit": 3000000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7b')
+  },
+  {
+    "Units_Manufactured": 7000,
+    "Units_Sold": 6900,
+    "Profit": 1200000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7c')
+  },
+  {
+    "Units_Manufactured": 6000,
+    "Units_Sold": 5900,
+    "Profit": 1000000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7d')
+  },
+  {
+    "Units_Manufactured": 9000,
+    "Units_Sold": 8800,
+    "Profit": 900000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7e')
+  },
+  {
+    "Units_Manufactured": 8000,
+    "Units_Sold": 7800,
+    "Profit": 800000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7f')
+  },
+    {
+    "Units_Manufactured": 2400,
+    "Units_Sold": 2300,
+    "Profit": 2100000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c76')
+  },
+  {
+    "Units_Manufactured": 1900,
+    "Units_Sold": 1650,
+    "Profit": 1550000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c77')
+  },
+  {
+    "Units_Manufactured": 12000,
+    "Units_Sold": 10500,
+    "Profit": 2900000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c78')
+  },
+  {
+    "Units_Manufactured": 6000,
+    "Units_Sold": 5450,
+    "Profit": 2400000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c79')
+  },
+  {
+    "Units_Manufactured": 4800,
+    "Units_Sold": 4700,
+    "Profit": 2900000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7a')
+  },
+  {
+    "Units_Manufactured": 2000,
+    "Units_Sold": 1950,
+    "Profit": 3500000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7b')
+  },
+  {
+    "Units_Manufactured": 7400,
+    "Units_Sold": 6500,
+    "Profit": 900000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7c')
+  },
+  {
+    "Units_Manufactured": 7000,
+    "Units_Sold": 6800,
+    "Profit": 1800000,
+    "Car_Id": ObjectId('67505acab584da1d5d428c7d')
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "carName": "Altroz",
+    "carBrand": "Tata",
+    "launchYear": 2023,
+    "price": 18000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "Model S",
+    "carBrand": "Tesla",
+    "launchYear": 2023,
+    "price": 85000,
+    "airbags": 8,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "Camry",
+    "carBrand": "Toyota",
+    "launchYear": 2022,
+    "price": 30000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "Accord",
+    "carBrand": "Honda",
+    "launchYear": 2023,
+    "price": 32000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "Elantra",
+    "carBrand": "Hyundai",
+    "launchYear": 2023,
+    "price": 25000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "3 Series",
+    "carBrand": "BMW",
+    "launchYear": 2022,
+    "price": 40000,
+    "airbags": 8,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "C-Class",
+    "carBrand": "Mercedes",
+    "launchYear": 2023,
+    "price": 42000,
+    "airbags": 8,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "Corolla",
+    "carBrand": "Toyota",
+    "launchYear": 2023,
+    "price": 22000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "Altima",
+    "carBrand": "Nissan",
+    "launchYear": 2022,
+    "price": 28000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "Sedan"
+  },
+  {
+    "carName": "Q7",
+    "carBrand": "Audi",
+    "launchYear": 2023,
+    "price": 60000,
+    "airbags": 8,
+    "seats": 7,
+    "carType": "SUV"
+  },
+  {
+    "carName": "X5",
+    "carBrand": "BMW",
+    "launchYear": 2023,
+    "price": 70000,
+    "airbags": 8,
+    "seats": 5,
+    "carType": "SUV"
+  },
+  {
+    "carName": "Grand Cherokee",
+    "carBrand": "Jeep",
+    "launchYear": 2022,
+    "price": 55000,
+    "airbags": 7,
+    "seats": 5,
+    "carType": "SUV"
+  },
+  {
+    "carName": "Tucson",
+    "carBrand": "Hyundai",
+    "launchYear": 2023,
+    "price": 35000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "SUV"
+  },
+  {
+    "carName": "Explorer",
+    "carBrand": "Ford",
+    "launchYear": 2023,
+    "price": 50000,
+    "airbags": 7,
+    "seats": 7,
+    "carType": "SUV"
+  },
+  {
+    "carName": "Kuga",
+    "carBrand": "Ford",
+    "launchYear": 2022,
+    "price": 40000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "SUV"
+  },
+  {
+    "carName": "Range Rover",
+    "carBrand": "Land Rover",
+    "launchYear": 2023,
+    "price": 85000,
+    "airbags": 8,
+    "seats": 5,
+    "carType": "SUV"
+  },
+  {
+    "carName": "Nexon",
+    "carBrand": "Tata",
+    "launchYear": 2023,
+    "price": 20000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "SUV"
+  },
+  {
+    "carName": "Harrier",
+    "carBrand": "Tata",
+    "launchYear": 2023,
+    "price": 30000,
+    "airbags": 6,
+    "seats": 5,
+    "carType": "SUV"
+  },
+  {
+    "carName": "Tigor",
+    "carBrand": "Tata",
+    "launchYear": 2023,
+    "price": 15000,
+    "airbags": 4,
+    "seats": 5,
+    "carType": "Sedan"
+  }
+]
